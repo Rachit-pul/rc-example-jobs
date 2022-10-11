@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#sbatch --time=10:00
+#SBATCH --mem=10gb
+#SBATCH --partition=open
+#SBATCH --output=R-matlab.%j.out
+#SBATCH --error=matlab.%j.err
+
+# Load matlab
+module purge
+module load matlab/R2022a
+
+# Run the job itself 
+matlab -batch "mygnrun(1000)"
