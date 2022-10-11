@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#sbatch --time=10:00
+#SBATCH --mem=10gb
+#SBATCH --partition=open
+#SBATCH --output=R-normalize.%j.out
+#SBATCH --error=R-normalize.%j.err
+
+# Load R
+module purge
+module use /storage/icds/RISE/sw8/modules
+module load r/4.2.1
+
+# Run the job itself
+Rscript normalize.R
