@@ -24,3 +24,10 @@ Our goal is to have a recipe file for all software on ICDS' clusters. Any contri
     - a brief overview of what the job does
     - details on input and output files if used
     - contributer information (name and date)
+
+### Example sites
+
+The following are some sources of example jobs:
+ - https://github.com/unlhcc/job-examples
+ - https://supercomputing.swin.edu.au/docs/2-ozstar/oz-slurm-examples.html
+ - https://hpc-uit.readthedocs.io/en/latest/jobs/examples.html
