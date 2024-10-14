@@ -43,4 +43,4 @@ This repository is licensed under the permisive MIT License. For more informatio
 
 # Troubleshooting
 
-If you encounter any issues while working with, building, or modifying any of the example jobs stored in this repository, please open an issue on this repository or email iask@ics.psu.edu. In that issue/email, please describe the issue that you are having, and please explain what you are trying to do with the container. The more information the merrier!
+If you encounter any issues while working with, building, or modifying any of the example jobs stored in this repository, please open an issue on this repository or email icds@psu.edu. In that issue/email, please describe the issue that you are having, and please explain what you are trying to do. The more information the merrier!
