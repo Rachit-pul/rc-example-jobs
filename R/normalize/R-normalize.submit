@@ -9,8 +9,7 @@
 
 # Load R
 module purge
-module use /storage/icds/RISE/sw8/modules
-module load r/4.2.1
+module load r/4.4.0
 
 # Run the job itself
 Rscript normalize.R
