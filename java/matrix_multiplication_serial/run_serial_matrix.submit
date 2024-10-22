@@ -8,10 +8,5 @@
 #SBATCH --time=01:00:00                            # Time limit hrs:min:sec
 #SBATCH --mem=16G                                   # Memory limit (adjust if necessary)
 
-module load java
-
-# Compile the Java program
-javac SerialMatrixMultiplication.java
-
 # Run the Java program
-java SerialMatrixMultiplication
+java SerialMatrixMultiplication.java

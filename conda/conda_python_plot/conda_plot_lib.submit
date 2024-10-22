@@ -10,10 +10,24 @@
 module purge
 module load anaconda3
 
-# activating the environment
+# Activating Conda and checking if the environment exists
 source ~/.bashrc
 conda init bash
+
+# Check if the environment "test_env" exists
+if conda env list | grep -q "test_env"; then
+    echo "Conda environment 'test_env' already exists."
+else
+    echo "Conda environment 'test_env' does not exist. Creating environment..."
+    bash conda_plot_lib_create_env.sh  # Run the script to create the environment
+fi
+
+# Activate the environment after ensuring it exists
+echo "Activating test_env"
 conda activate test_env
 
-# Run your code that uses the conda environment.
+echo "Running conda plot example"
+# Run your code that uses the conda environment
 python conda_plot_lib_example.py
+
+echo "Done"
